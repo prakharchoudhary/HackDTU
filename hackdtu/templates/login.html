@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}<title>Fitness Guru - Login</title>{% endblock %}
+{% block content %}
+<h1>
+	LOGIN:
+</h1>
+<form id="login-form" method="POST" action=".">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Login">
+</form>
+{% endblock %}
