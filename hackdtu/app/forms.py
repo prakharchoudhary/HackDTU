@@ -21,7 +21,7 @@ class SignupForm(forms.Form):
 								widget = forms.TextInput(attrs={'placeholder': 'Username', 'name': 'fname'})
 							)
 
-	email = forms.EmailField(label='email')
+	email = forms.EmailField(label='email', widget = forms.TextInput(attrs={'placeholder': 'Email', 'name': 'email'}))
 	
 	password1 = forms.CharField(
 		label='password1', 

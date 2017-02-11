@@ -38,7 +38,7 @@ def signup_page(request):
 				password = form.cleaned_data['password1'],
 				email = form.cleaned_data['email']
 				)
-			return HttpResponseRedirect('/signup/success/')
+			return HttpResponseRedirect('/')
 	form = SignupForm()
 	return render(request, "register.html", {'form': form})
 
